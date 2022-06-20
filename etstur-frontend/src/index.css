@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav-logo {
+	transform: translate(-50%, 0);
+	filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.5));
+	color: #fff;
+	font-weight: bold;
+}
+
+.nav-container {
+	box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25);
+}
+.menu {
+	position: relative;
+	z-index: 101;
+}
+.menu .list-item a {
+	padding: 20px 22px;
+	color: #354259;
+	font-size: 1.2rem;
+	font-weight: bold;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.menu .list-item a:hover{
+	background-color: #354259;
+	color: #C2DED1;
+}
+
+.mobile {
+	display: none;
+	position: relative;
+	z-index: 99;
+}
+.mobile-wrapper {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	left: -100%;
+	background-color: #C2DED1;
+	z-index: 100;
+	transition: all 0.4s ease-in; 
+}
+
+.opened {
+	left: -50%;
+}
+
+/* populer Carousel*/
+
+.card{
+	width: 100%;
+	height: 100%;
+}
+
+
+@media screen and (max-width: 1000px) {
+	.nav-logo {
+		font-size: 1.5rem;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.open-menu {
+		left: 0;
+		margin-top: 5rem;
+		width: 40%;
+		height: 500px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		position: absolute;
+	}
+	.mobile {
+		display: flex;
+	}
+
+}
