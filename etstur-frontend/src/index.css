@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
+body {
+	background-color: #ECE5C7;
+}
+
+.btn {
+	@apply w-full bg-light-green border p-3 rounded-md hover:bg-dark-blue hover:border hover:border-light-green hover:text-white
+}
+
+
 .nav-logo {
 	transform: translate(-50%, 0);
 	filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.5));
@@ -13,10 +23,12 @@
 	box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25);
 	z-index: 150;
 }
+
 .menu {
 	position: relative;
 	z-index: 151;
 }
+
 .menu .list-item a {
 	padding: 20px 22px;
 	color: #354259;
@@ -25,7 +37,7 @@
 	transition: all 0.3s ease-in-out;
 }
 
-.menu .list-item a:hover{
+.menu .list-item a:hover {
 	background-color: #354259;
 	color: #C2DED1;
 }
@@ -35,6 +47,7 @@
 	position: relative;
 	z-index: 99;
 }
+
 .mobile-wrapper {
 	width: 100%;
 	height: 100vh;
@@ -43,7 +56,7 @@
 	left: -100%;
 	background-color: #C2DED1;
 	z-index: 100;
-	transition: all 0.4s ease-in; 
+	transition: all 0.4s ease-in;
 }
 
 .opened {
@@ -55,17 +68,34 @@
 .sliderWrapper {
 	width: 90%;
 	min-height: 15rem;
-	margin: 10rem auto;
-}
-.splide__pagination {
-    bottom: 0;
-	padding: 10px;
-    background: #354259;
-}
-.card {
-	min-height: 18rem;
+	margin: 3rem auto;
+	margin-bottom: 2rem;
 }
 
+.splide__pagination {
+	bottom: 0;
+	padding: 10px;
+	background: #354259;
+}
+
+.card {
+	min-height: 20rem;
+}
+
+/*event section */
+.events-container {
+	padding: 5rem 2rem;
+	height: auto;
+	background-color: #354259;
+	clip-path: polygon(0 0%, 100% 05%, 100% 100%, 0% 100%);
+}
+
+.event {
+	@apply mx-auto
+}
+.event-description {
+	@apply text-center text-xl my-3 text-white border-x-2
+}
 @media screen and (max-width: 1000px) {
 	.nav-logo {
 		font-size: 1.5rem;
@@ -86,12 +116,15 @@
 		align-items: center;
 		position: absolute;
 	}
+
 	.mobile {
 		display: flex;
 	}
+
 	.card {
-		min-height: 18rem;
+		min-height: 20rem;
 	}
+
 	.sliderWrapper {
 		min-height: 18rem;
 	}

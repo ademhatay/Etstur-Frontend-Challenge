@@ -9,7 +9,8 @@ const PopulerEvents = () => {
 		perPage: 2,
 	}
 
-	return (
+	return <>
+		<h1 className='mt-44 px-10 text-2xl text-dark-blue font-bold'>Popüler Etkinlikler</h1>
 		<div className='sliderWrapper'>
 			<Splide options={{
 				gap: 30,
@@ -17,7 +18,8 @@ const PopulerEvents = () => {
 				arrows: false,
 				breakpoints: {
 					1000: {
-						perPage: 2
+						perPage: 2,
+						arrows: true,
 					},
 					640: {
 						perPage: 1,
@@ -31,10 +33,10 @@ const PopulerEvents = () => {
 				<PopulerSlide />
 				<PopulerSlide />
 				<PopulerSlide />
-				
+
 			</Splide>
 		</div >
-	)
+	</>
 }
 
 export default PopulerEvents

@@ -5,8 +5,8 @@ import { SplideSlide } from '@splidejs/react-splide';
 const PopulerSlide = () => {
 	return (
 		<SplideSlide>
-			<div className='card'>
-				<img src={placeholder} className='mx-auto border-1' alt="img-description"/>
+			<div className='card space-y-4'>
+				<img src={placeholder} className='mx-auto border-1 rounded-md' alt="img-description"/>
 				<div id="slide-description">
 					<p className="text-center text-2xl">Event Title</p>
 					<p className='text-center'>Açıklama Alanı</p>
