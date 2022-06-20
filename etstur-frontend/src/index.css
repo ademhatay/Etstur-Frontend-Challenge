@@ -11,17 +11,18 @@
 
 .nav-container {
 	box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25);
+	z-index: 150;
 }
 .menu {
 	position: relative;
-	z-index: 101;
+	z-index: 151;
 }
 .menu .list-item a {
 	padding: 20px 22px;
 	color: #354259;
 	font-size: 1.2rem;
 	font-weight: bold;
-	transition: background-color 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .menu .list-item a:hover{
@@ -51,11 +52,19 @@
 
 /* populer Carousel*/
 
-.card{
-	width: 100%;
-	height: 100%;
+.sliderWrapper {
+	width: 90%;
+	min-height: 15rem;
+	margin: 10rem auto;
 }
-
+.splide__pagination {
+    bottom: 0;
+	padding: 10px;
+    background: #354259;
+}
+.card {
+	min-height: 18rem;
+}
 
 @media screen and (max-width: 1000px) {
 	.nav-logo {
@@ -79,6 +88,12 @@
 	}
 	.mobile {
 		display: flex;
+	}
+	.card {
+		min-height: 18rem;
+	}
+	.sliderWrapper {
+		min-height: 18rem;
 	}
 
 }
