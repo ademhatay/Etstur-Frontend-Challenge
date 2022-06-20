@@ -8,7 +8,7 @@ body {
 }
 
 .btn {
-	@apply w-full bg-light-green border p-3 rounded-md hover:bg-dark-blue hover:border hover:border-light-green hover:text-white
+	@apply inline-block text-center cursor-pointer w-full bg-light-green border p-3 rounded-md hover:bg-dark-blue hover:border hover:border-light-green hover:text-white
 }
 
 
@@ -68,15 +68,22 @@ body {
 .sliderWrapper {
 	width: 90%;
 	min-height: 15rem;
-	margin: 3rem auto;
+	margin: 2rem auto;
 	margin-bottom: 2rem;
 }
 
 .splide__pagination {
 	bottom: 0;
 	padding: 10px;
-	background: #354259;
 }
+
+.splide__pagination__page {
+	background-color: red!important;
+}
+
+.splide__pagination__page.is-active {
+	background-color: blue!important;
+} 
 
 .card {
 	min-height: 20rem;
@@ -85,6 +92,7 @@ body {
 /*event section */
 .events-container {
 	padding: 5rem 2rem;
+	padding-top: 7rem;
 	height: auto;
 	background-color: #354259;
 	clip-path: polygon(0 0%, 100% 05%, 100% 100%, 0% 100%);
@@ -93,9 +101,11 @@ body {
 .event {
 	@apply mx-auto
 }
+
 .event-description {
 	@apply text-center text-xl my-3 text-white border-x-2
 }
+
 @media screen and (max-width: 1000px) {
 	.nav-logo {
 		font-size: 1.5rem;

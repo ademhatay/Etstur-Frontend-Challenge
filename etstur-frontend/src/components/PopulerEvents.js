@@ -2,15 +2,13 @@ import React from 'react'
 import { Splide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import PopulerSlide from './PopulerSlide';
+import placeholder from '../assets/placeholder.png'
+
+
 const PopulerEvents = () => {
 
-	Splide.defaults = {
-		type: 'loop',
-		perPage: 2,
-	}
-
 	return <>
-		<h1 className='mt-44 px-10 text-2xl text-dark-blue font-bold'>Popüler Etkinlikler</h1>
+		<h1 className='mt-32 md:mt-24 px-10 text-2xl text-dark-blue font-bold'>Popüler Etkinlikler</h1>
 		<div className='sliderWrapper'>
 			<Splide options={{
 				gap: 30,
@@ -27,12 +25,12 @@ const PopulerEvents = () => {
 				}
 			}
 			} >
-				<PopulerSlide />
-				<PopulerSlide />
-				<PopulerSlide />
-				<PopulerSlide />
-				<PopulerSlide />
-				<PopulerSlide />
+				<PopulerSlide title="Konser 1" img={placeholder} />
+				<PopulerSlide title="Sergi 1" img={placeholder} />
+				<PopulerSlide title="Tiyatro 1" img={placeholder} />
+				<PopulerSlide title="Futbol 1" img={placeholder} />
+				<PopulerSlide title="Konser 2" img={placeholder} />
+				<PopulerSlide title="Sergi 2" img={placeholder} />
 
 			</Splide>
 		</div >

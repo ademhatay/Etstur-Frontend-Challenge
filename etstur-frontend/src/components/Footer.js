@@ -9,7 +9,7 @@ const Footer = () => {
 			<li>Kategoriler</li>
 		</ul>
 		<p>This Project Made With Love.</p>
-		<a href='https://ademhatay.com' target={"_blank"}>www.<b>ademahatay</b>.com</a>
+		<a href='https://ademhatay.com' target={"_blank"} rel="noreferrer">www.<b>ademahatay</b>.com</a>
 	</footer>
   </>
 }
