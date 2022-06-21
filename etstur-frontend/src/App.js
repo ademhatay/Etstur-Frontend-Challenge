@@ -4,6 +4,7 @@ import EventDetail from './pages/EventDetail';
 import Home from './pages/Home'
 import data from './index.js';
 import SiteContext from './context/SiteContext';
+import NotFound from './pages/NotFound';
 
 
 const App = () => {
@@ -11,7 +12,8 @@ const App = () => {
 		<SiteContext.Provider value={data}>
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="detail" element={<EventDetail />} />
+				<Route path="detail/:event" element={<EventDetail />} />
+				<Route path='*' element={<NotFound />} />
 			</Routes>
 		</SiteContext.Provider>
 	</>

@@ -5,7 +5,6 @@ import SiteContext from '../context/SiteContext'
 
 const Events = () => {
 	const data = useContext(SiteContext)
-	console.log(data);
 	return <>
 		<h1 className='mt-10 px-10 text-2xl text-dark-blue font-bold'>Tüm Etkinlikler</h1>
 		<div className='events-container mx-auto'>

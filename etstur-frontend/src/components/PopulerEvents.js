@@ -2,7 +2,6 @@ import React from 'react'
 import { Splide } from '@splidejs/react-splide';
 import '@splidejs/react-splide/css';
 import PopulerSlide from './PopulerSlide';
-import placeholder from '../assets/placeholder.png'
 import { useContext } from 'react'
 import SiteContext from '../context/SiteContext'
 

@@ -18,9 +18,9 @@ const Navbar = () => {
 	return <>
 		<nav>
 			<div className='nav-container w-full h-16 bg-light-green fixed top-0'>
-				<a href="/" className='nav-logo w-24 h-20 p-3 bg-orange-600 rounded-2xl absolute top-5 left-1/2'>
-					<h1 className='logo text-base text-center'>Etkinlik APP</h1>
-				</a>
+				<NavLink to="/" className='nav-logo w-24 h-20 flex justify-center items-center bg-orange-600 rounded-2xl absolute top-5 left-1/2'>
+					<span className='logo text-base text-center'>Etkinlik APP</span>
+				</NavLink>
 				{/* MediaQuery:1000px display none .menu */}
 				<ul className='menu h-full flex justify-evenly  items-center mx-auto'>
 					<li className='list-item'><NavLink to="/">Anasayfa</NavLink></li>

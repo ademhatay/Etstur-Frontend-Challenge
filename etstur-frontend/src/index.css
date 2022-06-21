@@ -17,22 +17,23 @@ body {
 	filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.5));
 	color: #fff;
 	font-weight: bold;
+	z-index: 250;
 }
 
 .nav-container {
 	box-shadow: 0px 10px 6px rgba(0, 0, 0, 0.25);
-	z-index: 150;
+	z-index: 199;
 }
 
 .menu {
 	position: relative;
-	z-index: 151;
+	z-index: 225;
 }
 
 .menu .list-item a {
 	padding: 20px 22px;
 	color: #354259;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-weight: bold;
 	transition: all 0.3s ease-in-out;
 }
@@ -45,22 +46,22 @@ body {
 .mobile {
 	display: none;
 	position: relative;
-	z-index: 99;
+	z-index: 150;
 }
 
 .mobile-wrapper {
-	width: 100%;
+	width: 50%;
 	height: 100vh;
 	position: absolute;
 	top: 0;
 	left: -100%;
 	background-color: #C2DED1;
-	z-index: 100;
+	z-index: 200;
 	transition: all 0.4s ease-in;
 }
 
 .opened {
-	left: -50%;
+	left: 0;
 }
 
 /* populer Carousel*/
@@ -98,11 +99,10 @@ body {
 
 /*event section */
 .events-container {
+	margin-top: 20px;
 	padding: 5rem 2rem;
-	padding-top: 7rem;
 	height: auto;
 	background-color: #354259;
-	clip-path: polygon(0 0%, 100% 05%, 100% 100%, 0% 100%);
 }
 
 .event {
@@ -130,14 +130,15 @@ body {
 
 	.open-menu {
 		left: 0;
-		margin-top: 5rem;
-		width: 40%;
-		height: 500px;
+		top: 250px;
+		font-size: 0.9rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-evenly;
 		align-items: center;
 		position: absolute;
+		height: 400px;
+		width: 50%;
 	}
 
 	.mobile {

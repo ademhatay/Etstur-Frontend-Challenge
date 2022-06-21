@@ -1,14 +1,23 @@
 import React from 'react'
 
-const DetailEvent = () => {
+const DetailEvent = ({ date, location, price, category }) => {
+	const d = new Date();
+	let year = d.getFullYear();
+	const shareTwitter = () => {
+		const twitterUrl = `https://twitter.com/intent/tweet?text=${date} - ${location}`;
+		window.open(twitterUrl, '_blank');
+	}
 	return <>
 		<div className='flex flex-col items-center'>
-			<p>Tarih: 1961</p>
-			<p>Mekan: İstanbul - İzmir</p>
-			<p>Fiyat: 100TL</p>
-			<a href="https://twitter.com/" className='btn my-5 !w-36 '>Paylaş</a>
+			<p>
+				Tarih: {year <= date ? date : <>Geçti!! bu etkinlik {date} yılında bitti</>}
+			</p>
+			<p>Mekan: {location}</p>
+			<p>Fiyat: {price} TL</p>
+			<p>Kategori: {category}</p>
+			<button  onClick={shareTwitter} className='btn my-5 !w-36 '>Paylaş</button>
 		</div>
-		
+
 	</>
 }
 
