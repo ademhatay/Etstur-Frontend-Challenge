@@ -7,6 +7,7 @@ import DetailEvent from '../components/DetailEvent';
 import DetailMap from '../components/DetailMap';
 
 const EventDetail = () => {
+	
 	return <>
 		<Navbar />
 		<DetailHeader />

@@ -19,7 +19,7 @@ const Navbar = () => {
 		<nav>
 			<div className='nav-container w-full h-16 bg-light-green fixed top-0'>
 				<a href="/" className='nav-logo w-24 h-20 p-3 bg-orange-600 rounded-2xl absolute top-5 left-1/2'>
-					<h1 className='logo text-xl text-center'>Etkinlik APP</h1>
+					<h1 className='logo text-base text-center'>Etkinlik APP</h1>
 				</a>
 				{/* MediaQuery:1000px display none .menu */}
 				<ul className='menu h-full flex justify-evenly  items-center mx-auto'>

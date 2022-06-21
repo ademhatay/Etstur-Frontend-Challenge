@@ -6,7 +6,7 @@ const DetailEvent = () => {
 			<p>Tarih: 1961</p>
 			<p>Mekan: İstanbul - İzmir</p>
 			<p>Fiyat: 100TL</p>
-			<a className='btn my-5 !w-36 '>Paylaş</a>
+			<a href="https://twitter.com/" className='btn my-5 !w-36 '>Paylaş</a>
 		</div>
 		
 	</>

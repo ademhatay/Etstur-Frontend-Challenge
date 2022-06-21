@@ -78,15 +78,22 @@ body {
 }
 
 .splide__pagination__page {
-	background-color: red!important;
+	background-color: red !important;
 }
 
 .splide__pagination__page.is-active {
-	background-color: blue!important;
-} 
+	background-color: blue !important;
+}
+
+.splide__slide img {
+	height: 200px;
+	vertical-align: bottom;
+	width: 250px;
+	object-fit: contain;
+}
 
 .card {
-	min-height: 20rem;
+	min-height: 25rem;
 }
 
 /*event section */
@@ -104,6 +111,12 @@ body {
 
 .event-description {
 	@apply text-center text-xl my-3 text-white border-x-2
+}
+
+.event img {
+	width: 250px;
+	height: 150px;
+	object-fit: cover;
 }
 
 @media screen and (max-width: 1000px) {
@@ -131,12 +144,9 @@ body {
 		display: flex;
 	}
 
-	.card {
-		min-height: 20rem;
-	}
 
 	.sliderWrapper {
-		min-height: 18rem;
+		min-height: 22rem;
 	}
 
 }

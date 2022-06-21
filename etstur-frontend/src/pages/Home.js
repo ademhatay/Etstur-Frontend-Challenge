@@ -6,6 +6,7 @@ import PopulerEvents from '../components/PopulerEvents'
 import SearchBar from '../components/SearchBar'
 
 
+
 const Home = () => {
   return <>
 	<Navbar />
