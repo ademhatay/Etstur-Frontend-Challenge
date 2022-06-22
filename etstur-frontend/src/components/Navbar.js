@@ -24,7 +24,7 @@ const Navbar = () => {
 				{/* MediaQuery:1000px display none .menu */}
 				<ul className='menu h-full flex justify-evenly  items-center mx-auto'>
 					<li className='list-item'><NavLink to="/">Anasayfa</NavLink></li>
-					<li className='list-item'><NavLink to="/detail">Etkinlikler</NavLink></li>
+					<li className='list-item'><NavLink to="/">Etkinlikler</NavLink></li>
 					<li className='list-item'><NavLink to="/">Popüler</NavLink></li>
 					<li className='list-item'><NavLink to="/">Giriş / Kayıt</NavLink></li>
 				</ul>

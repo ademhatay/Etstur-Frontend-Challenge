@@ -8,6 +8,7 @@ import NotFound from './pages/NotFound';
 
 
 const App = () => {
+	const data1 = "merhaba"
 	return <>
 		<SiteContext.Provider value={data}>
 			<Routes>

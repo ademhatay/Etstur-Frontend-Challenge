@@ -3,10 +3,10 @@ import { NavLink } from 'react-router-dom'
 
 const NotFound = () => {
   return (
-	<div>
-		NotFound
+	<div className="my-56 text-center">
+		Aradığınız Sayfa Bulunamadı
 		<br /> <br />
-		<NavLink to="/">go home page</NavLink>
+		<NavLink to="/">Ana Sayfaya Gitmek İçin Buraya Tıklayın</NavLink>
 	</div>
   )
 }

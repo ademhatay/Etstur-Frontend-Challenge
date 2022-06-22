@@ -1,10 +1,10 @@
 import React from 'react'
 
-const DetailEvent = ({ date, location, price, category }) => {
+const DetailEvent = ({ name, description, date, location, price, category }) => {
 	const d = new Date();
 	let year = d.getFullYear();
 	const shareTwitter = () => {
-		const twitterUrl = `https://twitter.com/intent/tweet?text=${date} - ${location}`;
+		const twitterUrl = `https://twitter.com/intent/tweet?text=${name} -  ${date} - ${location}`;
 		window.open(twitterUrl, '_blank');
 	}
 	return <>
@@ -15,7 +15,7 @@ const DetailEvent = ({ date, location, price, category }) => {
 			<p>Mekan: {location}</p>
 			<p>Fiyat: {price} TL</p>
 			<p>Kategori: {category}</p>
-			<button  onClick={shareTwitter} className='btn my-5 !w-36 '>Paylaş</button>
+			<button onClick={shareTwitter} className='btn my-5 !w-36 '>Paylaş</button>
 		</div>
 
 	</>

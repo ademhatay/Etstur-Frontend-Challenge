@@ -12,22 +12,25 @@ const EventDetail = () => {
 
 	const location = useLocation();
 
-	const eventData = data.find((item) => { 
+	const eventData = data.find((item) => {
 		if (item.eventUrl === location.pathname.split('/')[2]) {
 			return true;
+		} else {
+			console.log("hata");
+			return false;
 		}
 	})
 	return <>
-	{
-	
-	}
 		<Navbar />
-		<DetailHeader name={eventData.eventName}  img={eventData.eventImages}/>
-		<DetailDescription  description={eventData.eventDescription}/>
-		<DetailEvent 
-		date={eventData.eventDate} 
-		location={eventData.eventLocation} 
-		price={eventData.price}/>
+		<DetailHeader name={eventData.eventName} img={eventData.eventImages} />
+		<DetailDescription description={eventData.eventDescription} />
+		<DetailEvent
+			name={eventData.eventName}
+			description={eventData.eventDescription}
+			date={eventData.eventDate}
+			location={eventData.eventLocation}
+			price={eventData.price}
+			category={eventData.eventCategory} />
 		<Footer />
 	</>
 

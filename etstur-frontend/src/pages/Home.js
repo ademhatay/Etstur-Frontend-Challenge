@@ -1,9 +1,8 @@
 import React from 'react'
-import Events from '../components/Events'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import PopulerEvents from '../components/PopulerEvents'
-import SearchBar from '../components/SearchBar'
+import SearchEvent from '../components/SearchEvent'
 
 
 
@@ -11,8 +10,7 @@ const Home = () => {
   return <>
 	<Navbar />
 	<PopulerEvents />
-	<SearchBar />
-	<Events />
+	<SearchEvent />
 	<Footer />
   </>
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 const Event = ({ item }) => {
 	return <>
 		<div className="event">
@@ -14,6 +15,6 @@ const Event = ({ item }) => {
 			<Link to={`detail/${item.eventUrl}`} className="btn !bg-dark-blue text-white">Detay</Link>
 		</div>
 	</>
-}
+}	
 
 export default Event

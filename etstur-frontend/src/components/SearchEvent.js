@@ -1,15 +1,33 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
+import SiteContext from '../context/SiteContext'
+import Event from './Event'
 
-const SearchBar = () => {
+const SearchEvent = () => {
+	const data = useContext(SiteContext)
+
+	const [value, setvalue] = useState('');
 
 	const submitHandler = (e) => {
 		e.preventDefault()
+
 	}
 
 	const changeHandler = (e) => {
-		console.log(e.target.value);
+		setvalue(e.target.value)
 	}
-	return (
+
+	const getOne = () => {
+		return (
+			<>
+				<p className='text-white text-center text-xl w-full'>
+					SearchBar'ımız şu an hizmet verememekte. Lütfen etkinlik listesinden size uygun olanı seçiniz. (Girdiğiniz değerleri de silersiniz iyi olur :))
+				</p>
+			</>
+		)
+	}
+
+
+	return <>
 		<div className='container px-10 md:w-2/3 mx-auto'>
 			<form>
 				<div className="relative">
@@ -21,7 +39,19 @@ const SearchBar = () => {
 				</div>
 			</form>
 		</div>
-	)
+		<h1 className='mt-10 px-10 text-2xl text-dark-blue font-bold'>Tüm Etkinlikler</h1>
+		<div className='events-container mx-auto'>
+			<div id='events' className="my-5 grid  md:grid-cols-3  auto-rows-auto  gap-5">
+				{
+					value === '' ?
+					data.map((item) => {
+						return <Event key={item.id} item={item} />
+					}) : getOne()
+				}
+
+			</div>
+		</div>
+	</>
 }
 
-export default SearchBar
+export default SearchEvent
