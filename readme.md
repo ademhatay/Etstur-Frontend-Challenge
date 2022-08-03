@@ -1,5 +1,5 @@
 # ETSTUR Frontend Challenge
-live: https://etstur-frontend-challenge.vercel.app/
+live: [https://etstur-frontend-challenge.vercel.app/](https://etstur-frontend-challenge-8oo064e91-ademhatay.vercel.app/)
 ## Proje Detayı
 Çeşitli etkinliklerin listlendiği bir anasayfa. Eğer etkinlik popüler ise en yukarıda bir slider içersinde gösteriliyor. Arama çubuğum maalesef şu an için çalışmıyor. En altta ise tüm etkinlikler listeleniyor. data index.js içerisindeki data objesinden geliyor.
 
