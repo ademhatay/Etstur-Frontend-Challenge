@@ -1,0 +1,12 @@
+{
+  "name": "etstur-frontend-challenge",
+  "version": "1.0.0",
+  "description": "live: [https://etstur-frontend-challenge.vercel.app/](https://etstur-frontend-challenge-8oo064e91-ademhatay.vercel.app/)\r ## Proje Detayı\r Çeşitli etkinliklerin listlendiği bir anasayfa. Eğer etkinlik popüler ise en yukarıda bir slider içersinde gösteriliyor. Arama çubuğum maalesef şu an için çalışmıyor. En altta ise tüm etkinlikler listeleniyor. data index.js içerisindeki data objesinden geliyor.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
